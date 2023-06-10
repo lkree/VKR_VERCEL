@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Router } from 'express';
 import { citiesPrefixRouter } from '../../entities/CitiesPrefix/index.js';
 import { configRouter } from '../../entities/Config/index.js';

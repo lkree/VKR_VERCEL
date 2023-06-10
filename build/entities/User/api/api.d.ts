@@ -47,9 +47,9 @@ declare class UserService {
         }> & Required<{
             _id: unknown;
         }>, never>>;
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
         accessToken: string;
         refreshToken: string;
@@ -75,9 +75,9 @@ declare class UserService {
         }> & Required<{
             _id: unknown;
         }>, never>>;
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
         accessToken: string;
         refreshToken: string;
@@ -104,9 +104,9 @@ declare class UserService {
         }> & Required<{
             _id: unknown;
         }>, never>>;
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
         accessToken: string;
         refreshToken: string;
@@ -114,63 +114,63 @@ declare class UserService {
     update(userData: RegistrationData): Promise<import("mongoose").UpdateWriteOpResult>;
     delete(userData: Pick<DBUser, 'email'>): Promise<boolean>;
     getAll(): import("mongoose").Query<(import("mongoose").Document<unknown, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }> & Omit<{
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     } & {
         _id: import("mongoose").Types.ObjectId;
     }, never>)[], import("mongoose").Document<unknown, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }> & Omit<{
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     } & {
         _id: import("mongoose").Types.ObjectId;
     }, never>, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }>;
     _getUserInfo(userData: Pick<DBUser, 'email'>): import("mongoose").Query<(import("mongoose").Document<unknown, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }> & Omit<{
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     } & {
         _id: import("mongoose").Types.ObjectId;
     }, never>) | null, import("mongoose").Document<unknown, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }> & Omit<{
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     } & {
         _id: import("mongoose").Types.ObjectId;
     }, never>, {}, {
+        accessLevel: string;
         email: string;
         password: string;
-        accessLevel: string;
         cityBounding?: string | undefined;
     }>;
 }

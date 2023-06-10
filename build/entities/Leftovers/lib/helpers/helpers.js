@@ -1,3 +1,4 @@
+// @ts-nocheck
 import _ from 'lodash';
 import { leftoversSort } from '../../../../shared/lib/helpers/index.js';
 import { BASE_ORDERED_COUNT, MINIMAL_LEFTOVER_AT_END } from '../../const/index.js';

@@ -9,7 +9,7 @@
       "ESNext"
     ],
     "paths": {
-      "~/*": ["./build/*"]
+      "~/*": ["./src/*"]
     },
     "target": "ES2022",
     "baseUrl": ".",
@@ -17,7 +17,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": false,
     "resolveJsonModule": true,
-    "rootDir": "build",
+    "rootDir": "src",
     "outDir": "build",
     "isolatedModules": true,
     "strict": true,
@@ -34,7 +34,7 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
   },
-  "include": ["build", "public"],
+  "include": ["src"],
   "tsc-alias": {
     "resolveFullPaths": true
   }

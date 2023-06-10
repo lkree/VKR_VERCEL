@@ -24,36 +24,36 @@
 /// <reference types="mongoose/types/inferschematype" />
 import { Schema } from 'mongoose';
 export declare const userModel: import("mongoose").Model<{
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 }, {}, {}, {}, import("mongoose").Document<unknown, {}, {
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 }> & Omit<{
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 } & {
     _id: import("mongoose").Types.ObjectId;
 }, never>, Schema<any, import("mongoose").Model<any, any, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, {
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 }, import("mongoose").Document<unknown, {}, import("mongoose").FlatRecord<{
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 }>> & Omit<import("mongoose").FlatRecord<{
+    accessLevel: string;
     email: string;
     password: string;
-    accessLevel: string;
     cityBounding?: string | undefined;
 }> & {
     _id: import("mongoose").Types.ObjectId;

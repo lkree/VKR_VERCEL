@@ -41,8 +41,8 @@ export declare const transformDBUserToTokenData: ({ email, accessLevel, cityBoun
 export declare const computeDataForUserCreation: ({ email, password, cityBounding, }: Omit<DBUser, 'accessLevel'>) => Promise<DBUser>;
 export declare const transformDBUserArrayToFE: (userArray: Array<DBUser>) => Array<FEUser>;
 export declare const transformDBUserAndTokenToFE: (d: DBUser & Tokens) => {
-    email: string;
     accessLevel: string;
+    email: string;
     cityBounding?: string | undefined;
     password: string;
     refreshToken: string;
