@@ -3,6 +3,6 @@
    "name": "vkr",
    "rewrites": [{
       "source": "/(.*)",
-      "destination": "/build/index.js"
+      "destination": "/build"
    }]
 }
