@@ -12,6 +12,7 @@ import * as process from 'process';
 // import { HTMLParser } from './entities/HTMLParser/index.js';
 // import { Transfer1cData } from './entities/Transfer1cData/index.js';
 import {computeDirName} from './shared/lib/helpers/index.js';
+import fs from "fs";
 // import { userService } from './entities/User/index.js';
 dotenv.config();
 // const app = express();
@@ -44,7 +45,10 @@ const app = express();
 // app.use(fileUpload({ createParentPath: true }));
 // prepareBaseRouting(app);
 
-app.get('/', (req, res) => res.json({ a: computeDirName('/') }));
+app.get('/', (req, res) => {
+  const folder = fs.readdirSync(computeDirName('/public/'));
+  res.json({ a: folder })
+});
 
 // app.use(cookieParser());
 // app.use(bodyParser.json());
