@@ -1,17 +1,17 @@
-import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
-import dotenv from 'dotenv';
+// import bodyParser from 'body-parser';
+// import cookieParser from 'cookie-parser';
+// import dotenv from 'dotenv';
 import express from 'express';
-import fileUpload from 'express-fileupload';
+// import fileUpload from 'express-fileupload';
 // import * as fs from 'fs';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 // import { createTransport } from 'nodemailer';
 import * as process from 'process';
-import { apiRouter } from './processes/routing/index.js';
-import { errorMiddleware } from './entities/ErrorMiddleware/index.js';
+// import { apiRouter } from './processes/routing/index.js';
+// import { errorMiddleware } from './entities/ErrorMiddleware/index.js';
 // import { HTMLParser } from './entities/HTMLParser/index.js';
 // import { Transfer1cData } from './entities/Transfer1cData/index.js';
-import {computeDirName, prepareBaseRouting} from './shared/lib/helpers/index.js';
+// import {computeDirName} from './shared/lib/helpers/index.js';
 // import { userService } from './entities/User/index.js';
 dotenv.config();
 // const app = express();
@@ -41,7 +41,7 @@ dotenv.config();
 //   .catch(console.log);
 const PORT = process.env.PORT ?? 3000;
 const app = express();
-app.use(fileUpload({ createParentPath: true }));
+// app.use(fileUpload({ createParentPath: true }));
 // prepareBaseRouting(app);
 
 app.get('/', (req, res) => res.text(123));
@@ -51,6 +51,7 @@ app.get('/', (req, res) => res.text(123));
 // app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(apiRouter);
 // app.use(errorMiddleware);
-void mongoose
-    .connect(process.env.DB_URL, { dbName: process.env.DB_NAME })
-    .then(() => app.listen(PORT, () => console.log(`Server started on ${PORT}`)));
+// void mongoose
+//     .connect(process.env.DB_URL, { dbName: process.env.DB_NAME })
+//     .then(() => app.listen(PORT, () => console.log(`Server started on ${PORT}`)));
+    app.listen(PORT, () => console.log(`Server started on ${PORT}`));
