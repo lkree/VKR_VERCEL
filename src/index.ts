@@ -71,3 +71,5 @@ app.use(errorMiddleware);
 void mongoose
   .connect(process.env.DB_URL!, { dbName: process.env.DB_NAME })
   .then(() => app.listen(PORT, () => console.log(`Server started on ${PORT}`)));
+
+export { app };

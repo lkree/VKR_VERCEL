@@ -34,7 +34,7 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
   },
-  "include": ["src"],
+  "include": ["src", "api"],
   "tsc-alias": {
     "resolveFullPaths": true
   }
