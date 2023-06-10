@@ -3,7 +3,6 @@
   "type": "module",
   "main": "build/index.js",
   "private": true,
-  "homepage": "./",
   "version": "0.0.1",
   "scripts": {
     "build": "tsc && tsc-alias",
