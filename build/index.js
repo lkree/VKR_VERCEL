@@ -44,7 +44,7 @@ const app = express();
 // app.use(fileUpload({ createParentPath: true }));
 // prepareBaseRouting(app);
 
-app.get('/', (req, res) => res.text(123));
+app.get('/', (req, res) => res.json({ a: 123 }));
 
 // app.use(cookieParser());
 // app.use(bodyParser.json());
