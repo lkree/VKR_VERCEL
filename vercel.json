@@ -2,9 +2,9 @@
   "version": 2,
   "name": "vkr",
   "builds": [
-    { "src": "./public/index.html", "use": "@vercel/static" },
+    { "src": "./public", "use": "@vercel/static" },
     {
-      "src": "./build/index.js",
+      "src": "./build",
       "use": "@vercel/node"
     }
   ]
