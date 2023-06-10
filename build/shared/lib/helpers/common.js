@@ -26,9 +26,9 @@ export const loadJSON = (relativePath) => JSON.parse(String(fs.readFileSync(comp
 const baseRoutingHandler = (entryPoint) => (_, res) => res.sendFile(entryPoint);
 export const prepareBaseRouting = (app) => {
     const uris = ['/', '/login', '/admin', '/logout'];
-    const baseRoute = baseRoutingHandler(computeDirName('/dist/index.html'));
+    const baseRoute = baseRoutingHandler(computeDirName('/public/index.html'));
     app.use(express.static(computeDirName('/assets')));
-    app.use(express.static(computeDirName('/dist')));
+    app.use(express.static(computeDirName('/public')));
     uris.forEach(uri => app.get(uri, baseRoute));
 };
 // todo whitespaces or another characters
