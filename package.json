@@ -5,7 +5,7 @@
   "homepage": "./",
   "version": "0.0.1",
   "scripts": {
-    "build": "node ./build",
+    "build": "tsc && tsc-alias",
     "build:watch": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")"
   },
   "devDependencies": {
