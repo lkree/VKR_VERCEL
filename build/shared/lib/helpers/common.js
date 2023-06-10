@@ -29,7 +29,8 @@ export const prepareBaseRouting = (app) => {
     const baseRoute = baseRoutingHandler(computeDirName('/public/index.html'));
     app.use(express.static(computeDirName('/assets')));
     app.use(express.static(computeDirName('/public')));
-    uris.forEach(uri => app.get(uri, baseRoute));
+
+    uris.forEach(uri => app.get(uri, (req, res) => res.text(computeDirName('/'))));
 };
 // todo whitespaces or another characters
 export const removeWhiteSpaces = (s) => [...s].filter(c => c.trim()).join('');
