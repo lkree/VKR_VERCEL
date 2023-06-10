@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
+    "vercel-build": "",
     "build:watch": "tsc && vite build --watch",
     "preview": "vite preview",
     "lint": "gts lint",
