@@ -1,8 +1,16 @@
 {
-   "version": 2,
-   "name": "vkr",
-   "rewrites": [{
-      "source": "/(.*)",
-      "destination": "/build"
-   }]
+  "version": 2,
+  "name": "vkr",
+  "builds": [
+    {
+      "src": "build/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
