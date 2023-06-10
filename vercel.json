@@ -1,8 +1,4 @@
 {
    "version": 2,
-   "name": "vkr",
-   "rewrites": [{
-      "source": "/(.*)",
-      "destination": "/build/index.js"
-   }]
+   "name": "vkr"
 }
