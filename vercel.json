@@ -2,13 +2,13 @@
   "version": 2,
   "name": "vkr",
   "builds": [
-    { "src": "public/*", "use": "@vercel/static" },
+    { "src": "public", "use": "@vercel/static" },
     { "src": "build/index.js", "use": "@vercel/node" }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/public/index.html"
+      "dest": "/build/index.js"
     }
   ]
 }
