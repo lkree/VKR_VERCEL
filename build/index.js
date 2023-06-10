@@ -11,7 +11,7 @@ import { apiRouter } from './processes/routing/index.js';
 import { errorMiddleware } from './entities/ErrorMiddleware/index.js';
 // import { HTMLParser } from './entities/HTMLParser/index.js';
 // import { Transfer1cData } from './entities/Transfer1cData/index.js';
-import { prepareBaseRouting } from './shared/lib/helpers/index.js';
+import {computeDirName, prepareBaseRouting} from './shared/lib/helpers/index.js';
 // import { userService } from './entities/User/index.js';
 dotenv.config();
 // const app = express();
@@ -42,12 +42,15 @@ dotenv.config();
 const PORT = process.env.PORT ?? 3000;
 const app = express();
 app.use(fileUpload({ createParentPath: true }));
-prepareBaseRouting(app);
-app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(apiRouter);
-app.use(errorMiddleware);
+// prepareBaseRouting(app);
+
+app.get('/', (req, res) => res.text(computeDirName('/')));
+
+// app.use(cookieParser());
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(apiRouter);
+// app.use(errorMiddleware);
 void mongoose
     .connect(process.env.DB_URL, { dbName: process.env.DB_NAME })
     .then(() => app.listen(PORT, () => console.log(`Server started on ${PORT}`)));
