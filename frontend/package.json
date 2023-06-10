@@ -2,7 +2,7 @@
   "name": "vkr",
   "private": true,
   "version": "0.0.1",
-  "homepage": ".",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "vercel-build": "tsc && vite build",
