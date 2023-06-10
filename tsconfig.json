@@ -34,7 +34,7 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
   },
-  "include": ["build"],
+  "include": ["build", "public"],
   "tsc-alias": {
     "resolveFullPaths": true
   }
