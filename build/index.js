@@ -1,6 +1,6 @@
 // import bodyParser from 'body-parser';
 // import cookieParser from 'cookie-parser';
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 import express from 'express';
 // import fileUpload from 'express-fileupload';
 // import * as fs from 'fs';
